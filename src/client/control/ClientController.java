@@ -119,15 +119,15 @@ public class ClientController extends Observable {
 		return messages.size();
 	}
 	
-	public String getMessage(int index) {
+	public String getMessageAt(int index) {
 		return messages.get(index);
 	}
 	
-	public Set<Player> getPlayers() {
-		return players;
+	public int size() {
+		return players.size();
 	}
 	
-	public Player getPlayer(int index) {
+	public Player getPlayerAt(int index) {
 		if (index < 0 || index >= players.size())
 			return null;
 		int i = 0;
